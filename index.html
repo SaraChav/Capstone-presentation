@@ -68,7 +68,7 @@
 						<div style="position:relative">
 							<img src="./img/f1.PNG" width="100%" height="auto" class="fragment"> 
 							<div style="position:absolute; top:0; left:0;">
-								<img src="./img/f3.png"  width="100%" height="auto" class="fragment">
+								<img src="./img/f2.PNG"  width="100%" height="auto" class="fragment">
 							</div>
 						</div> 
 					</section>
@@ -76,21 +76,21 @@
 						<div style="width:100%; height:auto; display:flex;">
 							<div style="width:50%; height:auto; display:flex;" >
 								<span class="fragment">	
-									<h3 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+									<h3 style="margin-top: 10px; color: #00000; font-style: :normal"; align="left">
 										<br style="align-content: flex-start">How to address the problem?</br> 
 									</h3>
-									<h4 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
-										<br>First, it is necessary to determine which postal codes have :</br></h4>
+									<h5 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+										<br>First, it is necessary to determine which postal codes have :</br></h5>
 									<h5 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
 										<br> - the largest population densities, </br>
 										<br> - the most restaurants’ concentration, </br>
 										<br> - the variety of restaurants that each neighborhoods have, and </br>
 										<br> - the closeness with another postal code (the restaurants or commensals of a neighbor postal code maybe require the service). </br>
 									</h5>
-									<h4 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+									<h5 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
 										<br>With this information, it is possible to build a model that determines the potential demand of the food delivery service within the cities.</br>	
 										<br>Finally, the most profitable neighborhoods where the company may enter are recommended.</br>
-									</h4>
+									</h5>
 								</span>
 							</div>
 							<div style="width:50%;" class="fragment">
@@ -100,46 +100,68 @@
 							</div>
 						</div>
 					</section>
-			  <section data-transition="slide" >
+			  		<section data-transition="slide" >
 						<span class="fragment">	
 							<h2 style="margin-top: 60px; color: #00000; font-style: :normal">A description of the data and how it will be used to solve the problem.</h2>
 						</span>
 					</section>
-			  <section data-transition="zoom">
-					  <div style="width:100%; height:auto; display:flex;">
-							<div style="width:30%; height:auto; display:flex;" >
-								<span class="fragment">	
-									<h4 style="margin-top: 10px; color: #00000; font-style: :normal"; align="left">
-										<br style="align-content: flex-start">Required data::</br> 
-									</h4>
-									<h5 style="margin-top: 10px; color: #00000; font-style: :normal"; align="left">
-										<br>Which cities and Postal codes have the majority density of population</br>
-										<br></br>
-						  				<br></br>
-										<br>How many restaurants and the variety of types of restaurant have a specific postal code </br>
-										<br></br>
-										<br></br>
-										<br>Parameters  about the behavior of  the consumers that the company observed in other counties. For example, the percentage of people and restaurants that used the delivery service and the frequency</br>
-									</h5>
-								</span>
-							</div>
-							<div style="width:20%;" class="fragment" >
-								<span class="fragment">	
-									<img src="./img/c4.png" width="100%">
-								</span>
-							</div>
+					<section data-transition="zoom">
+						<div style="width:100%; height:auto; display:flex;">
 							<div style="width:38%; height:auto; display:flex;" >
 								<span class="fragment">	
-									<h4 style="margin-top: 10px; color: #00000; font-style: :normal"; align="left">
-										<br style="align-content: flex-start">Data sources:</br> 
+									<h4 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+										<br>Required data:</br>
+										<br>Population density by postal codes</br>
+										<br>Data sources:</br>
+										<br>CYBO is a web site that uses tools and data from other sites like Google maps, Wikipedia, national census, etc. </br>
+										<br>In this page the postal codes are listed with their city, population and area.With this information the population density can be obtained using the formula</br>
+										<br>Density = Population/ Area</br>
+								</h4>
+								</span>
+							</div>
+							<div style="width:60%;" class="fragment">
+								<span class="fragment">	
+									<img src="./img/f4.png" width="100%" height="auto" align="center">
+								</span>
+							</div>
+						</div>
+					</section>
+					<section data-transition="zoom">
+						<div style="width:100%; height:auto; display:flex;">
+							<div style="width:38%; height:auto; display:flex;" >
+								<span class="fragment">	
+									<h4 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+										<br>Required data:</br>
+										<br>Number and type of restaurants by postal codes</br>
+										<br>Data sources:</br>
+										<br>Foursquare is a technology company that built a massive dataset of location data. Using the Foursquare API, we can search for specific type of venues or stores at a given location. </br>
+										<br>In this data base we can query the restaurants by a specific postal code.</br>
 									</h4>
-									<h5 style="margin-top: 10px; color: #00000; font-style: :normal"; align="left">
-										<br>CYBO is a web site that utilized tools and data from other sites like Google maps, Wikipedia, national census etc. In this pages we can obtained a list of postal codes with de population and area. </br>
-										<br></br>
-										<br>Foursquare is a technology company that built a massive dataset of location data. Using the Foursquare API, we can search for specific type of venues or stores around a given location. So, in this data base we can query the restaurants for a specific postal code.  </br>
-										<br></br>
-										<br>We don’t have this information and it’s impossible to know because this company doesn’t exist, and others similar companies don’t public this kind of information. So, we can set this information with 3 possible scenarios (best- case, base-case and worst-case).</br>
-									</h5>
+								</span>
+							</div>
+							<div style="width:60%;" class="fragment">
+								<span class="fragment">	
+									<img src="./img/f5.png" width="100%" height="auto">
+								</span>
+							</div>
+						</div>
+					</section>
+					<section data-transition="zoom">
+						<div style="width:100%; height:auto; display:flex;">
+							<div style="width:50%; height:auto; display:flex;" >
+								<span class="fragment">	
+									<h4 style="margin-top: 60px; color: #00000; font-style: :normal"; align="left">
+										<br>Required data:</br>
+										<br>Parameters about the consumers behavior observed by the company in other counties. For example, the frequency and  percentage of people and restaurants that used the delivery service.</br>
+										<br>Data sources:</br>
+										<br>This information is unavailable because this is a fictious company and other similar companies do not publish this kind of information.  </br>
+										<br>So, 3 possible scenarios (best- case, base-case and worst-case) can be established.</br>
+									</h4>
+								</span>
+							</div>
+							<div style="width:50%;" class="fragment" align="center">
+								<span class="fragment">	
+									<img src="./img/f6.jpg" width="100%" height="auto">
 								</span>
 							</div>
 						</div>
